@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="UTF-8">
+		<title>Rock Paper Scissors Project</title>
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Lilita+One" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
+		<link href="stylesheet.css" rel="stylesheet">
+	</head>
+
+	<body>
+	   
+		<header>
+			<h1>Let's Play...<h1>
+			<h2>Rock, Paper, Scissors!</h2>
+		</header>
+
+		<p id="action-message">Pick your choice<p>
+
+		<div class="results">
+				<p></p>
+			</div>
+		<div class="choices">
+			<div class="choice" id="Rock">
+				 <img src="assets/images/rock.jpg" style="height: 100px; width: 150px">
+			</div>
+			<div class="choice" id="Paper">
+				 <img src="assets/images/paper.jpg" style="height: 100px; width: 150px">
+			</div>
+			<div class="choice" id="Scissors">
+				 <img src="assets/images/scissors.jpg" style="height: 100px; width: 150px">
+			</div>
+		</div>
+
+		<div class="score">
+			<div id="user" class="label">You: <span id="your-ccore">0</span> </div>
+			<div id="computer" class="label">Computer: <span id="computer-score">0</span></div> 
+		</div>
+
+				
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script src = "https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>		
+		<script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+		<script>
+		  // Initialize Firebase
+		  var config = {
+			apiKey: "AIzaSyC522TgKOdPGnm1JnHEu86_Hrbtzu0yiBY",
+			authDomain: "rock-paper-scissors-e256f.firebaseapp.com",
+			databaseURL: "https://rock-paper-scissors-e256f.firebaseio.com",
+			projectId: "rock-paper-scissors-e256f",
+			storageBucket: "rock-paper-scissors-e256f.appspot.com",
+			messagingSenderId: "266913671372"
+		  };
+		  firebase.initializeApp(config);
+		</script>	 
+		<script type = "text/javascript" src = "RPS.js"></script> 
+
+
+	</body>
+</html>
